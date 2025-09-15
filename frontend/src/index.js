@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
 import reportWebVitals from './reportWebVitals';
-import './index.css';
 import 'react-multi-carousel/lib/styles.css';
 import { RouterProvider } from 'react-router-dom';
 import { router } from './routes';
-import Navigation from './components/Navigation/NavigationBar';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import BazaarApplicationWrapper from './pages/BazaarApplicationWrapper';
+import Bazaar from './Bazaar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-    <RouterProvider router={router}>
-        <Navigation/>
-        
+         <Provider store={store}>
+         <RouterProvider router={router}>
       
-    </RouterProvider>
-    </React.StrictMode>
+             <BazaarApplicationWrapper />; 
+      
+         </RouterProvider>
+         </Provider>
    
 );
 

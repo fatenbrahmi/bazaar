@@ -1,11 +1,13 @@
+import React from 'react';
 import { createBrowserRouter } from "react-router-dom";
 import ProductlistPage from "./pages/ProductlistPage/ProductlistPage";
 import Bazaar from "./Bazaar";
 import BazaarApplicationWrapper from "./pages/BazaarApplicationWrapper";
 import ProductDetails from "./pages/ProductDetailPage/ProductDetails"
 import { loadProductById } from './routes/products';
-
-
+import AuthenticationWrapper from "./pages/AuthenticationWrapper";
+import Register from "./pages/Register/Register"
+import Login from "./pages/Login/Login"; // ← Laissez comme ça
 
 
 
@@ -18,19 +20,28 @@ export const router = createBrowserRouter([
             path:"/",
             element:<Bazaar />
         },
-        {
-            path:"/women",
-            element:<ProductlistPage categoryType={'WOMEN'}/>,
-        },
-        {
-          path:"/men",
-          element:<ProductlistPage categoryType={'MEN'}/>,
+       {
+          path: "/:categoryType",
+          element: <ProductlistPage />
         },
          {
-        path: "/product/:productId",
-        element: <ProductDetails />,
-        loader: ({ params }) => loadProductById(params),
+          path: "/product/:slug",
+          element: <ProductDetails />
         }
       ]
-    }
+    },
+    {
+      path:"/v1/",
+      element:<AuthenticationWrapper />,
+      children:[
+        {
+          path:"login",
+          element:<Login /> // ← Utilisez createElement
+        },
+        {
+          path:"register",
+          element:<Register />
+        }
+      ]
+    },
   ]);
