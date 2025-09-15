@@ -5,7 +5,6 @@
 
 ---
 
-## 📌 Introduction
 Welcome to the **Fullstack E-Commerce Shopping Project** repository!  
 This project is a work in progress and aims to build a comprehensive e-commerce application using **React.js** for the front-end and **Spring Boot** for the backend.  
 
@@ -16,40 +15,41 @@ Once completed, it will offer a complete online shopping experience with feature
 
 ---
 
-## ⚙️ Installation & Setup
+⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/fatenbrahmi/bazaar.git
-cd bazaar
-    2️⃣ Start the Backend (Spring Boot)
-      cd backend
-      ./mvnw spring-boot:run
+ 1️⃣ Clone the repository
+    git clone https://github.com/fatenbrahmi/bazaar.git
+   
 
-    3️⃣ Start the Frontend (React)
-      cd frontend
-      npm install
-      npm start
+ 2️⃣ Start the Backend (Spring Boot)
+    cd backend
+    ./mvnw spring-boot:run
 
-🛠️ Technologies Being Used
-Frontend:
-  React.js
-  Redux
-  Tailwind CSS
-  Axios
+ 3️⃣ Start the Frontend (React)
+    cd frontend
+    npm install
+    npm start
 
-Backend:
- Spring Boot
- Spring Security
- Spring Data JPA
+🛠️ Technologies Being Used  
 
-Database:
- PostgreSQL
+Frontend:  
+  React  
+  Redux  
+  Tailwind CSS  
+  Axios  
 
-Authentication:
- JWT (JSON Web Tokens)
+Backend:  
+ Spring Boot  
+ Spring Security  
+ Spring Data JPA  
+
+Database:  
+ PostgreSQL  
+
+Authentication:  
+ JWT (JSON Web Tokens)  
 
 
-Build Tools:
- Maven
+Build Tools:  
+ Maven  
  Webpack

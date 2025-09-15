@@ -7,7 +7,7 @@ import { countCartItems } from '../../store/features/cart'
 import './Navigation.css';
 import { useSelector } from 'react-redux'
 
-import logo from '../../assets/images/BAZAR.png';
+import logo from '../../assets/images/bazaar.png';
 
 const Navigation = ({variant="default"}) => {
 
