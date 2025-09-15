@@ -153,7 +153,7 @@ const ProductDetails = () => {
           <Breadcrumb links={breadCrumbLinks} />
           <p className='text-3xl pt-4'>{productData.title}</p>
           <Rating rating={productData.rating} />
-          <p className='text-xl font-bold py-2'>${productData.price}</p>
+          <p className='text-xl font-bold py-2'>DT{" "}{productData.price}</p>
 
           <div className='flex flex-col py-2'>
             <div className='flex gap-2'>
@@ -208,7 +208,7 @@ const ProductDetails = () => {
       </div>
 
       {/* Produits similaires */}
-      {/* Produits similaires */}
+
 <SectionHeading title='Similar Products' />
 <div className='flex px-10'>
   <div className='pt-4 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-8 px-2 pb-10'>
