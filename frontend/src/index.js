@@ -8,7 +8,7 @@ import { router } from './routes';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import BazaarApplicationWrapper from './pages/BazaarApplicationWrapper';
-import Bazaar from './Bazaar';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

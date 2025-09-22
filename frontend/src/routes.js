@@ -4,7 +4,7 @@ import ProductlistPage from "./pages/ProductlistPage/ProductlistPage";
 import Bazaar from "./Bazaar";
 import BazaarApplicationWrapper from "./pages/BazaarApplicationWrapper";
 import ProductDetails from "./pages/ProductDetailPage/ProductDetails"
-import { loadProductById } from './routes/products';
+
 import AuthenticationWrapper from "./pages/AuthenticationWrapper";
 import Register from "./pages/Register/Register"
 import Login from "./pages/Login/Login"; // ← Laissez comme ça
