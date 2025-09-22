@@ -1,8 +1,6 @@
 import React from 'react'
 
-const categoriesData = [
 
-]
 
 const Categories = ({types}) => {
   return (
