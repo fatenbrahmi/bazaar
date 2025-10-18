@@ -1,6 +1,6 @@
 # 🛍️ Bazaar - Fullstack E-Commerce Project
 
-![Home Page Screenshot](./docs/productDetails.png)  
+![Home Page Screenshot](./docs/bg.png)  
 
 
 ---
